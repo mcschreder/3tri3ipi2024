@@ -1,0 +1,140 @@
+
+body, button, a {
+  color: #EDF1F7;
+  font: 400 1rem "Mukta", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+#app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+
+
+*/ Background, Header and Main Zone /*
+
+
+
+#background{
+  z-index: -1;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh; 
+}
+
+#background video{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  )
+#background :: after(
+  content('');
+  width: inherit;
+  height:  inherit; 
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+)
+
+
+
+
+
+
+
+
+  
+header{
+  column-gap: 64px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding-top: 24px;
+}
+header img{
+  width: 70px;
+  height: auto; 
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+  list-style: none;
+}
+.navigation__link{
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+.navigation__link: hover{
+  color: #C51212;
+  cursor: pointer;
+}
+.navigation__link:: after{
+  content('');
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 60%;
+  height: 2px; 
+  background: #C51212;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.navigation__link: hover:: after{
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+.navigation__social{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+.navigation__social svg{
+  width: 20px;
+  height: 20px;
+  opacity: 0,6;
+  transition: all 0.5s;
+}
+.navigation__social svg: hover{
+  opacity: 1;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+
+
+
+main{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  flex: 1;
+}
+.main__info{
+  width: 100%;
+  max-width: 500px;
+}
+.main__info p{
+  font-size: 18px;
+  margin: 20px 0 28px;
+}

@@ -1,0 +1,252 @@
+<!-- https://isayashouya.github.io/Stay-For-A-Day/Code/Stay For A Day - Home.html -->
+<!DOCTYPE html> 
+<!-- Tipo do documento = html -->
+<html lang="pt-br"> <!-- html é o site e ele está com a linguagem padrão = Português Brasileiro -->
+	<head> <!-- a Cabeça do site -->
+		<title> Stay For A Day </title> <!-- Titulo do site -->
+		<meta name="google-site-verification" content="i552IuPfqTIfBqPtWuGHejRy1QLq0bRt8nubnKasKG0"> <!-- indica que o site é verificado e seguro -->
+		<meta charset="UTF-8"> <!-- Permite uso de caracteres especias --> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Permite compactibilidade abrangente -->
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- analisa a largura do dispositivo e a usa como a largura da página., ou seja torna o site mais responsivo -->
+		<link rel="icon" href="https://isayashouya.github.io/Stay-For-A-Day/Imagens/June%20ico.ico" type="image/png"> <!-- icone do site = imagem -->
+		<style>
+			h1{
+		                font-weight: 200;
+				color: white;
+				margin-left: 100px;
+		        }
+			a{
+                		color: white;
+				
+            		}
+            		a:hover{
+                		border: 2px solid #f5252f;
+                		padding: 10px;
+                		border-radius: 15px;
+                		transition: 0.3s all;
+				cursor: pointer;
+            		}
+			#bgimage{
+				width: 100%;
+				height: 100%; 
+				object-fit: cover;
+				z-index: -1;
+				position: fixed;
+				inset: 0; 
+				margin-top: 130px;
+			}
+			#imgheader{
+				width: 180px;
+				height: 140px; 
+				margin-right: 450px;
+			}
+			#imglogo{
+				width: 450px;
+				height: 350px; 
+				margin-left: 400px;
+				position: fixed;
+				margin-top: 60px;
+				inset: 0; 
+			}
+			#Fazerlogin{
+				color: black;
+				background-color: #bdb9bb;
+				font-size: 18px;
+				border-radius: 15px;
+			}
+			#Fazerlogin: hover{
+				cursor: pointer;
+				font-size: 24px;
+			}
+			#titulosfad{
+				font-weight: 200;
+				color: white;
+				margin-left: 100px;
+			}
+			body{
+		                font-family: arial, sans-serif;
+		                max-width: 1440px;
+		                margin: 0 auto;]
+				color: white;
+				background-repeat: no-repeat;
+				background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+            		}
+			label{
+                		display: inline;
+            		}
+
+			span{
+				color: #03fc45;
+            		}
+            		p{
+                		line-height: 20px;
+                		max-width: 500px;
+                		font-family: Tahoma;
+				color: white;
+				margin-left: 450px;
+				margin-top: 50px;
+            		}
+			header{
+                		display: flex;
+                		flex-direction: row;
+                		justify-content: space-between;
+                		align-items: center;
+            		}
+            		#title{
+                		flex-direction: column;
+                		line-height: 10px;
+            		}
+            		li{
+                		display:inline-block;
+                		margin: 20px;
+            		}
+            		a{
+                		color: white;
+            		}
+            		a:hover{
+                		border: 2px solid #f5252f;
+                		padding: 10px;
+                		border-radius: 15px;
+                		transition: 0.3s all;
+            		}
+			main{
+				display: flex;
+			        flex-direction: row;
+			        margin-top: 50px;
+			}
+			aside{
+		                margin-top: 30px;
+		        }
+			@media screen and (max-width: 1920px), 
+			screen and (max-height: 1080px) {
+	       				background-repeat: no-repeat;
+			}
+			@media screen and (max-width: 1440px), 
+			screen and (max-height: 900px) {
+	       				background-repeat: no-repeat;
+			}
+			@media screen and (max-width: 1200px){
+				header{
+	                    		flex-direction: column;
+	                	}
+					background-repeat: no-repeat;
+		                main{
+		                	flex-direction: column;
+		                }
+		                input{
+		                	align-self: center;
+		                }
+		                p{
+		                	text-align: center;
+		                }
+		        }
+			@media screen and (max-width: 760px){
+	                	header{
+	                    		flex-direction: column;
+	                	}
+		                main{
+		                	flex-direction: column;
+		                }
+				background-repeat: no-repeat;
+		                h2{
+		                	font-size: 35px; 
+		                	text-align: center;
+		                }
+		                input{
+		                	align-self: center;
+		                }
+		                ul{
+		                	text-align: center;
+		                	text-size: 10px;
+		                }
+		                p{
+		                	text-align: center;
+		                }
+		        }
+			@media screen and (max-width: 200px){
+	                	header{
+	                    		flex-direction: column;
+	                	}
+		                main{
+		                	flex-direction: column;
+		                }
+					background-repeat: no-repeat;
+		                h2{
+		                	font-size: 35px; 
+		                	text-align: center;
+		                }
+		                input{
+		                	align-self: center;
+		                }
+		                ul{
+		                	text-align: center;
+		                	text-size: 10px;
+		                }
+		                p{
+		                	text-align: center;
+		                }
+		        }
+			@media screen and (max-width: 100px){
+	                	header{
+	                    		flex-direction: column;
+	                	}
+					background-repeat: no-repeat;
+		                main{
+		                	flex-direction: column;
+		                }
+		                h2{
+		                	font-size: 35px; 
+		                	text-align: center;
+		                }
+		                input{
+		                	align-self: center;
+		                }
+		                ul{
+		                	text-align: center;
+		                	text-size: 10px;
+		                }
+		                p{
+		                	text-align: center;
+		                }
+		        }
+		</style>
+	</head> <!-- fecha a Cabeça -->
+	<body> <!-- Corpo do site -->
+		<header> <!-- Cabeçalho do site -->
+			<br> <!-- Break, quebra uma linha -->
+			<img src="https://isayashouya.github.io/Stay-For-A-Day/Imagens/6 Sem Título_20240809181725.png" id="imgheader">
+			<nav> <!-- linka esta pagina do site a outos sites ou outras áreas da página -->
+				<ul> <!-- lista não ordenada -->
+					<li> <!-- Lista -->
+						<a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay%20For%20A%20Day%20-%20Home.html"> Home  </a> <!-- elemento âncora tag expecifica para fazer hiperligações nas páginas web ou seja idela para o href , o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL -->
+					</li> <!-- Fechando uma Lista -->
+					<li> <!-- Lista -->
+						<a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay%20For%20A%20Day%20-%20Suporte%20e%20Feedback.html"> Suporte </a> <!-- elemento âncora tag expecifica para fazer hiperligações nas páginas web ou seja idela para o href , o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL -->
+					</li> <!-- Fechando uma Lista -->
+					<li> <!-- Lista -->
+						<a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay For A Day - Jogue Agora!.html"> Jogar </a>  <!-- elemento âncora tag expecifica para fazer hiperligações nas páginas web ou seja idela para o href , o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL -->
+					</li> <!-- Fechando uma Lista -->
+					<li> <!-- Lista -->
+						<a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay%20For%20A%20Day%20-%20Cadastrar.html"> Cadastre-se </a> <!-- elemento âncora tag expecifica para fazer hiperligações nas páginas web ou seja idela para o href , o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL -->
+					</li> <!-- Fechando uma Lista -->
+				</ul> <!-- Fechando uma lista não ordenada -->
+			</nav> <!-- linka esta pagina do site a outos sites ou outras áreas da página -->
+		</header> <!-- Fecha o Cabeçalho do site -->
+		<br>
+		<main> <!-- Estrutura principal do site -->
+			<aside>
+                		<p> <!-- Paragrafo , o modo em que se está escrito o texto designado a tag <p> será dominante , ou seja ficará do mesmo geito em que escrevi ; ex: pulando a linha com enter , dando tab , etc. , ficará desse modo , diferentemente das outras tags de escrita de texto  -->
+                    			Este é o site oficial do jogo<strong> Stay For A Day </strong>
+			</aside>
+			<article> <!-- Artigo , uma composição independente da página, aplicativo ou site, que se destina a ser distribuível ou reutilizável de forma independente , ou seja uma divisoria independete -->	
+				<img src="https://isayashouya.github.io/Stay-For-A-Day/Imagens/6 Sem Título_20240809181725.png" alt="Stay For A Day" id="imglogo"> <!-- Procura a imagem via URL na web , a imagem é a Logo da empresa --> 
+			</article> <!-- Fecha o Artigo -->
+		</main> <!-- Fecha a Estrutura principal do site -->
+		<footer>
+		</footer>
+		<div> <a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay%20For%20A%20Day%20-%20Login.html" id="#Fazerlogin"> Login </a> </div>
+		<video loop autoplay muted>
+			<source src="https://isayashouya.github.io/Stay-For-A-Day/Imagens/YouCut_20240730_171536269%20(1)-depositphotos-bgremover.webm" id="bgimage"> 
+		</video>
+	</body> <!-- Fecha o corpo do site -->
+</html> <!-- Fecha o site-->

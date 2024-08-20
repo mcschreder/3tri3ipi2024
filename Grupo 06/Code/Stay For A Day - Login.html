@@ -1,0 +1,263 @@
+<!DOCTYPE html> <!-- Tipo do documento = html -->
+<html lang="pt-br"> <!-- html é o site e ele está com a linguagem padrão = Português Brasileiro -->
+	<head> <!-- Cabeça do site -->
+		<title> Faça seu Login </title> <!-- Titulo do site -->
+		<meta name="google-site-verification" content="i552IuPfqTIfBqPtWuGHejRy1QLq0bRt8nubnKasKG0"> <!-- indica que o site é verificado e seguro -->
+		<meta charset="UTF-8"> <!-- Permite uso de caracteres especias --> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Permite compactibilidade abrangente -->
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- analisa a largura do dispositivo e a usa como a largura da página., ou seja torna o site mais responsivo -->
+		<link rel="icon" href="https://isayashouya.github.io/Stay-For-A-Day/Imagens/June%20ico.ico" type="image/png"> <!-- icone do site = imagem -->
+		<style>
+			h1{
+		    		font-weight: 200;
+				color: white;
+				margin-left: 100px;
+		        }
+			a{
+        			color: white;
+            		}
+			a:hover{
+        			border: 2px solid #f5252f;
+        			padding: 10px;
+        			border-radius: 15px;
+        			transition: 0.3s all;
+  				cursor: pointer;
+            		}
+			form{
+		                display: flex;
+		                flex-direction: column;
+		                width: 70%;
+            		}
+		        #cadastrar{
+		                height: 50px;
+		                width:50%;
+		                color: black;
+		                font-weight: bold;
+		        }
+		        form [type="submit"]:hover{
+				background-color: #03fc45;
+				color: white;
+		                cursor: pointer;
+		        }
+			form [type="submit"]{
+				margin-left: 250px;
+		        }
+            		#cadastro{
+                		text-align: center;
+                		color: #03fc45;
+            		}
+            		input{
+                		height: 30px;
+                		padding: 10px;
+                		outline: none;
+                		border: 0;
+                		font-size: 15px;
+                		margin-top: 30px;
+				margin-left: 200px;
+            		}
+			#bgimage{
+			  	width: 100%;
+				height: 100%; 
+				object-fit: cover;
+				z-index: -1;
+				position: fixed;
+				inset: 0; 
+				margin-top: 130px;
+			}
+			#imgheader{
+				width: 180px;
+				height: 140px; 
+				margin-right: 450px;
+			}
+			#imglogo{
+				width: 450px;
+				height: 350px; 
+				margin-left: 400px;
+				position: fixed;
+				margin-top: 60px;
+				inset: 0; 
+			}
+			#titulosfad{
+				font-weight: 200;
+				color: white;
+				margin-left: 100px;
+			}
+			body{
+		    		font-family: arial, sans-serif;
+		    		max-width: 1440px;
+		    		margin: 0 auto;]
+				color: white;
+				background-repeat: no-repeat;
+				background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+            		}
+			label{
+                		display: inline;
+            		}
+            		p{
+                		line-height: 20px;
+                		max-width: 500px;
+                		font-family: Tahoma;
+				color: white;
+				margin-left: 450px;
+				margin-top: 50px;
+            		}
+      			label{
+                		display: inline;
+				color: white;
+            		}
+			header{
+                		display: flex;
+                		flex-direction: row;
+                		justify-content: space-between;
+                		align-items: center;
+            		}
+            		#title{
+                		flex-direction: column;
+                		line-height: 10px;
+            		}
+            		li{
+                		display:inline-block;
+                		margin: 20px;
+            		}
+            		a{
+                		color: white;
+            		}
+            		a:hover{
+                		border: 2px solid #f5252f;
+                		padding: 10px;
+                		border-radius: 15px;
+                		transition: 0.3s all;
+			}
+      			main{
+				display: flex;
+      			        flex-direction: row;
+      			        margin-top: 50px;
+      			}
+			aside{
+		                margin-top: 30px;
+			}
+			@media screen and (max-width: 1200px){
+				header{
+					flex-direction: column;
+	                	}
+		                main{
+		                	flex-direction: column;
+		                }
+		                input{
+		                	align-self: center;
+		                }
+		                p{
+		                	text-align: center;
+		                }
+		        }
+			@media screen and (max-width: 760px){
+	                	header{
+					flex-direction: column;
+	                	}
+		                main{
+		                	flex-direction: column;
+		                }
+		                h2{
+		                	font-size: 35px; 
+		                	text-align: center;
+				}
+		                input{
+		                	align-self: center;
+		                }
+		                ul{
+		                	text-align: center;
+		                	text-size: 10px;
+		                }
+		                p{
+		                	text-align: center;
+		                }
+			}
+			@media screen and (max-width: 200px){
+	                	header{
+					flex-direction: column;
+	                	}
+		                main{
+		                	flex-direction: column;
+		                }
+		                h2{
+		                	font-size: 35px; 
+		                	text-align: center;
+		                }
+		                input{
+		                	align-self: center;
+		                }
+		                ul{
+		                	text-align: center;
+		                	text-size: 10px;
+		                }
+		                p{
+		                	text-align: center;
+		                }
+		        }
+			@media screen and (max-width: 100px){
+	                	header{
+					flex-direction: column;
+	                	}
+		                main{
+		                	flex-direction: column;
+		                }
+		                h2{
+		                	font-size: 35px; 
+		                	text-align: center;
+		                }
+		                input{
+		                	align-self: center;
+		                }
+		                ul{
+		                	text-align: center;
+		                	text-size: 10px;
+		                }
+		                p{
+		                	text-align: center;
+		                }
+			}
+		</style>
+	</head> <!-- fecha a Cabeça -->
+	<body> <!-- Corpo do site -->
+		<header> <!-- Cabeçalho do site -->
+			<br> <!-- Break, quebra uma linha -->
+			<img src="https://isayashouya.github.io/Stay-For-A-Day/Imagens/6 Sem Título_20240809181725.png" id="imgheader">
+			<nav> <!-- linka esta pagina do site a outos sites ou outras áreas da página -->
+				<ul> <!-- lista não ordenada -->
+					<li> <!-- Lista -->
+						<a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay%20For%20A%20Day%20-%20Home.html"> Home  </a> <!-- elemento âncora tag expecifica para fazer hiperligações nas páginas web ou seja idela para o href , o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL -->
+					</li> <!-- Fechando uma Lista -->
+					
+					<li> <!-- Lista -->
+						<a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay%20For%20A%20Day%20-%20Informa%C3%A7%C3%B4es%20do%20jogo.html"> Informações </a>  <!-- elemento âncora tag expecifica para fazer hiperligações nas páginas web ou seja idela para o href , o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL -->
+					</li> <!-- Fechando uma Lista -->
+					<li> <!-- Lista -->
+						<a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay%20For%20A%20Day%20-%20Jogue%20Agora!.html"> Jogar </a>  <!-- elemento âncora tag expecifica para fazer hiperligações nas páginas web ou seja idela para o href , o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL -->
+					</li> <!-- Fechando uma Lista -->
+					<li> <!-- Lista -->
+						<a href="https://isayashouya.github.io/Stay-For-A-Day/Code/Stay%20For%20A%20Day%20-%20Cadastrar.html"> Cadastre-se </a> <!-- elemento âncora tag expecifica para fazer hiperligações nas páginas web ou seja idela para o href , o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL -->
+					</li> <!-- Fechando uma Lista -->
+				</ul> <!-- Fechando uma lista não ordenada -->
+			</nav> <!-- linka esta pagina do site a outos sites ou outras áreas da página -->
+		</header> <!-- Fecha o Cabeçalho do site -->
+		<br>
+		<main> <!-- Estrutura principal do site -->
+      			<aside>
+			        <p>
+			            Bem vindo <strong> devolta </strong>
+			        </p>
+			        <form method="POST" action="cadastro.php">
+				        <p id="cadastro"><span color: #03fc45;> Login </span></p>
+				        <label>Email:</label><input type="text" name="login" id="login"><br>
+				        <label>Senha:</label><input type="password" name="senha" id="senha"><br>
+				        <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+				</form>
+			</aside>
+		</main> <!-- Fecha a Estrutura principal do site -->
+		<footer>
+		</footer>
+		<video loop autoplay muted>
+			<source src="https://isayashouya.github.io/Stay-For-A-Day/Imagens/YouCut_20240730_171536269%20(1)-depositphotos-bgremover.webm" id="bgimage"> 
+		</video>
+	</body> <!-- Fecha o corpo do site -->
+</html> <!-- Fecha o site-->
